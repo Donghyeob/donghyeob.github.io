@@ -12,7 +12,7 @@ const Header = ({ aboutY, skillsY, projectY, careerY }) => {
       : menu === 'about' ? window.scrollTo({ top: aboutY - 72, left: 0, behavior: 'smooth' })
         : menu === 'skills' ? window.scrollTo({ top: skillsY - 72, left: 0, behavior: 'smooth' })
           : menu === 'project' ? window.scrollTo({ top: projectY - 72, left: 0, behavior: 'smooth' })
-            : window.scrollTo({ top: careerY - 72, left: 0, behavior: 'smooth' })
+            : window.scrollTo({ top: 30000, left: 0, behavior: 'smooth' })
   }
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import Contents from './Contents';
 import Footer from './Footer';
@@ -11,10 +11,6 @@ const Home = () => {
   const [skillsY, setSkillsY] = useState('');
   const [projectY, setProjectY] = useState('');
   const [careerY, setCareerY] = useState('');
-
-  useEffect(() => {
-    console.log(aboutY);
-  }, [aboutY])
 
   return (
     <React.Fragment>

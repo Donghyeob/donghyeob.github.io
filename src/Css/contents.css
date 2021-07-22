@@ -122,15 +122,19 @@ img { width: 127px; height: 127px; border-radius: 1rem; }
 .projectWrap { padding: 40px 0 60px; }
 .projectBox { width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; }
 .projectItem {
-  border: 1px solid gray; box-shadow: 1px 5px 5px gray; border-radius: 1rem; padding-bottom: 20px; margin-bottom: 60px;
-  width: 48%; color: #27273C;
+  border: 1px solid gray; box-shadow: 1px 5px 5px gray; border-radius: 1rem; padding: 20px; margin-bottom: 60px;
+  width: 48%; color: white; background-color: #27273C;
 }
 .projectItemTitle { display: flex; flex-direction: column; margin-bottom: 20px; }
 .projectItemTitle > span:nth-child(1) { font-size: 2.4rem; font-weight: 700; }
 .projectItemTitle > span:nth-child(2) { font-size: 1rem; font-weight: 500; color: gray; }
 .projectItemCon { white-space: pre-wrap; text-align: left; padding: 0 50px; word-break:break-all; font-size: 1rem; font-weight: 500; }
 .projectItemCon > span:nth-child(odd) { font-size: 1.25rem; font-weight: 700; margin-bottom: 10px; width: 50px;}
-.projectItemCon > span:nth-child(even) > p { padding-left: 20px; }
+.projectItemCon > span > span:nth-child(odd) { font-size: 1.25rem; font-weight: 700; margin: 0 10px 10px 0; }
+.projectItemCon > span:nth-child(even) > p { padding-left: 30px; }
+.moreButton { padding: 1rem 2rem; display: inline-block; border-radius: 10rem; background-color: #27273C; font-weight: 700; font-size: 1rem;
+  text-decoration: none; line-height: 1.5; cursor: pointer; margin-top: 50px; color: white;
+}
 
 /* Career */
 .careerWrap { background: #f5f5f5; padding: 40px 0 60px; }
