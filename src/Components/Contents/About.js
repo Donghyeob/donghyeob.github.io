@@ -13,7 +13,7 @@ const About = ({ setAboutY }) => {
 
   useEffect(() => {
     setAboutY(aboutRef.current.offsetTop);
-  }, [])
+  })
 
   return (
     <React.Fragment>
@@ -42,8 +42,7 @@ const About = ({ setAboutY }) => {
               <EditOutlined />
               <div>
                 <span>학력</span><br />
-                <span>동의대학교<br />
-                  소프트웨어융합학과(석사)</span>
+                <span>동의대학교<br />소프트웨어융합학과(석사)</span>
               </div>
             </div>
             <div>

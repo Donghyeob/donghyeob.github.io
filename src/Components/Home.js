@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <React.Fragment>
-      <div>
+      <div className='wrap'>
         <Header aboutY={aboutY} skillsY={skillsY} projectY={projectY} careerY={careerY} />
         <Contents setAboutY={setAboutY} setSkillsY={setSkillsY} setProjectY={setProjectY} setCareerY={setCareerY} />
         <Footer />

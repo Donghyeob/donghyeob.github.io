@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'nsR';
+  src: url('./font/NanumSquareR.ttf');
+}
+@font-face {
+  font-family: 'nsB';
+  src: url('./font/NanumSquareB.ttf');
+}
+@font-face {
+  font-family: 'nsEB';
+  src: url('./font/NanumSquareEB.ttf');
+}

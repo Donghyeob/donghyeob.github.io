@@ -14,11 +14,11 @@ const ProjectTextGen = ({ object }) => {
         <span><CheckOutlined />업무</span>
         <span><p>{object.position}</p></span>
         <span><CheckOutlined />front-end</span>
-        {object.frontEnd ? <span><p>{object.frontEnd}</p></span> : <span><p>없음</p></span>}
+        {object.frontEnd ? <span><p>{object.frontEnd}</p></span> : <span><p> - </p></span>}
         <span><CheckOutlined />back-end</span>
-        {object.backEnd ? <span><p>{object.backEnd}</p></span> : <span><p>없음</p></span>}
+        {object.backEnd ? <span><p>{object.backEnd}</p></span> : <span><p> - </p></span>}
         <span><CheckOutlined />db</span>
-        {object.db ? <span><p>{object.db}</p></span> : <span><p>없음</p></span>}
+        {object.db ? <span><p>{object.db}</p></span> : <span><p> - </p></span>}
         <span><CheckOutlined />결과</span>
         <span><p>{object.result}</p></span>
       </div>

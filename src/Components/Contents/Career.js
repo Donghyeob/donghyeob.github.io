@@ -9,7 +9,7 @@ const Career = ({ setCareerY }) => {
 
   useEffect(() => {
     setCareerY(careerRef.current.offsetTop);
-  }, [])
+  })
 
   return (
     <React.Fragment>
@@ -27,9 +27,8 @@ const Career = ({ setCareerY }) => {
               >
                 <Column title="근무기간" dataIndex="date" key="date" align='center' />
                 <Column title="회사명" dataIndex="coName" key="coName" align='center' />
-                <Column title="부서/직책" dataIndex="position" key="position" align='center' />
+                <Column title="직책" dataIndex="position" key="position" align='center' />
                 <Column title="담당업무" dataIndex="task" key="task" align='center' />
-                <Column title="지역" dataIndex="local" key="local" align='center' />
               </Table>
             </div>
           </div>

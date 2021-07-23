@@ -5,7 +5,7 @@ const Skills = ({ setSkillsY }) => {
 
   useEffect(() => {
     setSkillsY(skillsRef.current.offsetTop);
-  }, [])
+  })
 
   return (
     <React.Fragment>
@@ -35,9 +35,34 @@ const Skills = ({ setSkillsY }) => {
                 <span>&nbsp;&nbsp;Jquery</span>
                 <img src='/jquery.png' alt='jquery' />
               </div>
+              <div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;React</span>
+                <img src='/react.png' alt='react' />
+              </div>
+              <div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;Redux</span>
+                <img src='/redux.png' alt='redux' />
+              </div>
+              <div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saga</span>
+                <img src='/saga.png' alt='saga' />
+              </div>
             </div>
           </div>
           <div className='skillsBox'>
+            <span>Back-end</span>
+            <hr />
+            <div className='boxItems'>
+              <div>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;Node</span>
+                <img src='/node.png' alt='node' />
+              </div>
+              <div>
+                <span>&nbsp;&nbsp;Spring</span>
+                <img src='/spring.png' alt='spring' />
+              </div>
+            </div>
+            <hr className='Skilldiv' />
             <span>Infra</span>
             <hr />
             <div className='boxItems'>
@@ -48,20 +73,6 @@ const Skills = ({ setSkillsY }) => {
               <div>
                 <span>&nbsp;&nbsp;Jenkins</span>
                 <img src='/jenkins.png' alt='jenkins' />
-              </div>
-            </div>
-          </div>
-          <div className='skillsBox'>
-            <span>Etc</span>
-            <hr />
-            <div className='boxItems'>
-              <div>
-                <span>&nbsp;&nbsp;&nbsp;github</span>
-                <img src='/github.png' alt='github' />
-              </div>
-              <div>
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SVN</span>
-                <img src='/svn.png' alt='svn' />
               </div>
             </div>
           </div>

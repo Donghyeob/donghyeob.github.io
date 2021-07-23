@@ -1,6 +1,6 @@
 import React from 'react';
 
-const introArea = { height: window.innerHeight - 110, zIndex: '15', marginTop: '50px' }
+const introArea = { height: window.innerHeight, zIndex: '15' }
 
 const Intro = () => {
   const onClickIntro = () => {
@@ -9,7 +9,8 @@ const Intro = () => {
 
   return (
     <React.Fragment>
-      <div style={introArea}>
+      <div className='introWrap' style={introArea}>
+        {/* <div className='introWrap'> */}
         <div className='containerItem'>
           <p className='introText'>
             <span>Kang Donghyeob</span><br />
@@ -27,6 +28,7 @@ const Intro = () => {
         <div className='containerItem'>
           <div className='introButton' onClick={onClickIntro}>더 알아보기</div>
         </div>
+        {/* </div> */}
       </div>
     </React.Fragment >
   )

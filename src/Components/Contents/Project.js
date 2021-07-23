@@ -19,7 +19,7 @@ const Project = ({ setProjectY }) => {
 
   useEffect(() => {
     setProjectY(projectRef.current.offsetTop);
-  }, [])
+  })
 
   return (
     <React.Fragment>
