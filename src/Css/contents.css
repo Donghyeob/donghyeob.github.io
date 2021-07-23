@@ -76,6 +76,9 @@ animation: move-wave 3s;
 /* Intro */
 .introWrap { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .introText { white-space: pre-wrap; font-size: 4rem; color: white; margin-bottom: 0.5em; font-family: 'nsEB'; }
+@media screen and (max-width: 768px) {
+  .introText { display: none; }
+}
 .introTail {margin: 15px auto; border-top: 1px solid white; width: 3.25rem; margin-bottom: 2.5em;}
 .introSubText { white-space: pre-wrap; font-size: 1.25rem; color: white;}
 .introButton { padding: 1rem 2rem; display: inline-block; border-radius: 10rem; background-color: white; font-weight: 700; font-size: 1.25rem;

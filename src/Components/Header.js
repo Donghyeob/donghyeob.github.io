@@ -26,7 +26,7 @@ const Header = ({ aboutY, skillsY, projectY, careerY }) => {
     <React.Fragment>
       <div className={scrollY < 10 ? 'headerContainer' : 'headerContainer headerContainerDown'}>
         <div className='headerWrap'>
-          <div className='logo' onClick={onClickMenu} value={'home'}>Kang Donghyeob</div>
+          <div className='logo' onClick={onClickMenu} value={'home'}><span>Kang Donghyeob</span></div>
           <div className='menuList'>
             <div onClick={onClickMenu} value={'about'}>About</div>
             <div onClick={onClickMenu} value={'skills'}>Skills</div>
