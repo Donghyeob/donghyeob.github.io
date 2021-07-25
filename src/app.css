@@ -1,4 +1,8 @@
 @font-face {
+  font-family: 'nsL';
+  src: url('./font/NanumSquareL.ttf');
+}
+@font-face {
   font-family: 'nsR';
   src: url('./font/NanumSquareR.ttf');
 }

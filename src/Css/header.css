@@ -3,7 +3,7 @@
 .headerContainerDown { opacity: 0.9; }
 .headerWrap { margin: 0 auto; color: white; display: flex; justify-content: space-between; width: 1100px; font-family: 'nsR'; }
 @media screen and (max-width: 768px) {
-  .headerWrap { margin: 0 auto; color: white; display: flex; justify-content: space-between; width: 100%; }
+  .headerWrap { margin: 0 auto; color: white; display: flex; justify-content: space-between; width: 100%; padding: 0 15px; }
 }
 .logo { line-height: 52px; font-size: 1.25rem; text-align: center; cursor: pointer; }
 @media screen and (max-width: 768px) {
