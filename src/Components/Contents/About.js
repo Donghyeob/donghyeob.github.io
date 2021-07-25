@@ -25,44 +25,56 @@ const About = ({ setAboutY }) => {
         <div className='containerItem'>
           <div className='aboutBox'>
             <div>
-              <UserOutlined />
               <div>
-                <span>이름</span><br />
+                <UserOutlined />
+                <span>이름</span>
+              </div>
+              <div>
                 <span>강동협</span>
               </div>
             </div>
             <div>
-              <CalendarOutlined />
               <div>
-                <span>생년월일</span><br />
+                <CalendarOutlined />
+                <span>생년월일</span>
+              </div>
+              <div>
                 <span>1992.02.27</span>
               </div>
             </div>
             <div>
-              <EditOutlined />
               <div>
-                <span>학력</span><br />
+                <EditOutlined />
+                <span>학력</span>
+              </div>
+              <div>
                 <span>동의대학교<br />소프트웨어융합학과(석사)</span>
               </div>
             </div>
             <div>
-              <PhoneOutlined />
               <div>
-                <span>연락처</span><br />
+                <PhoneOutlined />
+                <span>연락처</span>
+              </div>
+              <div>
                 <span>010.5301.5545</span>
               </div>
             </div>
             <div>
-              <MailOutlined />
               <div>
-                <span>이메일</span><br />
+                <MailOutlined />
+                <span>이메일</span>
+              </div>
+              <div>
                 <span>donghyeob.k@gmail.com</span>
               </div>
             </div>
             <div>
-              <GithubOutlined />
               <div>
-                <span>깃허브</span><br />
+                <GithubOutlined />
+                <span>깃허브</span>
+              </div>
+              <div>
                 <a href='https://github.com/Donghyeob' target='blank'>https://github.com/Donghyeob</a>
               </div>
             </div>
