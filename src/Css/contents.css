@@ -86,7 +86,10 @@ animation: move-wave 3s;
 }
 
 /* public css */
-.contentTitle { font-size: 4rem; border-bottom: 1px solid #27273C; color: #27273C;}
+.contentTitle { font-size: 4rem; border-bottom: 1px solid #27273C; color: #27273C; }
+@media screen and (max-width: 768px) {
+  .contentTitle { font-size: 2.75rem; border-bottom: 1px solid #27273C; color: #27273C; }
+}
 .contentTail { margin: 20px auto; border: none; }
 
 /* About */
@@ -97,11 +100,14 @@ animation: move-wave 3s;
 .aboutBox { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
 .aboutBox > div { width: 30%; height: 90px; text-align: left; display: flex; margin-bottom: 15px; }
 @media screen and (max-width: 768px) {
-  .aboutBox > div { width: 30%; height: 125px; text-align: left; display: flex; margin-bottom: 15px; word-break: break-all; }
+  .aboutBox > div { width: 49%; height: 100%; text-align: left; display: flex; margin-bottom: 15px; word-break: break-all; }
 }
 .aboutBox > div > span:nth-child(1n) > svg { width: 32px; height: 32px; margin-right: 10px;}
 .aboutBox > div > div > span:nth-child(1) { font-size: 1.5rem; }
 .aboutBox > div > div > span:nth-child(3) { font-size: 1.25rem; }
+@media screen and (max-width: 768px) {
+  .aboutBox > div > div > span:nth-child(3) { font-size: 1.2rem; }
+}
 .aboutBox > div > div > a { font-size: 1.25rem; color: black; }
 
 /* Skills */
@@ -116,6 +122,7 @@ animation: move-wave 3s;
 }
 .skillsBox > span { font-size: 1.5rem; width: 100%; height: 37px; }
 .skillsBox > hr { border-top: 1px solid gray; width: 80%; }
+.skillsBox:nth-child(2) > div:nth-child(3) > div > img { width: 110px; height: 110px; margin: 9px; }
 img { width: 127px; height: 127px; border-radius: 1rem; padding: 8px; }
 .boxItems { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
 .boxItems:nth-child(1n) > div {
@@ -135,7 +142,7 @@ img { width: 127px; height: 127px; border-radius: 1rem; padding: 8px; }
 .projectWrap { padding: 40px 0 60px; }
 .projectBox { width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; }
 @media screen and (max-width: 768px) {
-  .projectBox { width: 100%; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; }
+  .projectBox { width: 95%; display: flex; flex-wrap: wrap; justify-content: space-between; }
 }
 .projectItem {
   border: 1px solid gray; box-shadow: 1px 5px 5px gray; border-radius: 1rem; padding: 20px; margin-bottom: 60px;
@@ -143,7 +150,7 @@ img { width: 127px; height: 127px; border-radius: 1rem; padding: 8px; }
 }
 @media screen and (max-width: 768px) {
   .projectItem {
-    border: 1px solid gray; box-shadow: 1px 5px 5px gray; border-radius: 1rem; padding: 20px; margin-bottom: 60px;
+    border: 1px solid gray; box-shadow: 1px 5px 5px gray; border-radius: 1rem; padding: 15px; margin-bottom: 20px;
     width: 100%; color: white; background-color: #27273C;
   }
 }
@@ -151,11 +158,17 @@ img { width: 127px; height: 127px; border-radius: 1rem; padding: 8px; }
 .projectItemTitle > span:nth-child(1) { font-size: 2.4rem; }
 .projectItemTitle > span:nth-child(2) { font-size: 1.25rem; color: gray; }
 .projectItemCon { white-space: pre-wrap; text-align: left; padding: 0 50px; word-break:break-all; font-size: 1rem; }
+@media screen and (max-width: 768px) {
+  .projectItemCon { white-space: pre-wrap; text-align: left; padding: 0 15px; word-break:break-all; font-size: 1rem; }
+}
 .projectItemCon > span:nth-child(odd) { font-size: 1.5rem; margin-bottom: 10px; width: 50px;}
 .projectItemCon > span > span:nth-child(odd) { font-size: 1.5rem; margin: 0 10px 10px 0; }
 .projectItemCon > span:nth-child(even) > p { padding-left: 30px; font-size: 1.25rem; }
 .moreButton { padding: 1rem 2rem; display: inline-block; border-radius: 10rem; background-color: #27273C; font-size: 1.25rem;
   text-decoration: none; line-height: 1.5; cursor: pointer; margin-top: 50px; color: white;
+}
+@media screen and (max-width: 768px) {
+  .moreButton { margin-top: 0; }
 }
 
 /* Career */
@@ -163,6 +176,7 @@ img { width: 127px; height: 127px; border-radius: 1rem; padding: 8px; }
 .careerItem { width: 1100px; margin: 0 auto; }
 @media screen and (max-width: 768px) {
   .careerItem { width: 100%; margin: 0 auto; }
+  .ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td { padding: 12px; }
 }
 .ant-table-wrapper { box-shadow: 1px 5px 5px gray; }
 .ant-table-thead { font-size: 1.25rem; }

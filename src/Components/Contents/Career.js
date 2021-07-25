@@ -2,7 +2,62 @@ import React, { useEffect, useRef } from 'react';
 import CareerText from './CareerText';
 import { Table } from 'antd';
 
-const { Column } = Table;
+const columns1 = [
+  {
+    title: '근무기간',
+    dataIndex: 'date',
+    key: 'date',
+    width: '20%',
+    align: 'center',
+  },
+  {
+    title: '회사명',
+    dataIndex: 'coName',
+    key: 'coName',
+    width: '20%',
+    align: 'center',
+  },
+  {
+    title: '직책',
+    dataIndex: 'position',
+    key: 'position',
+    width: '20%',
+    align: 'center',
+  },
+  {
+    title: '담당업무',
+    dataIndex: 'task',
+    key: 'task',
+    width: '40%',
+    align: 'center',
+  },
+];
+
+const columns2 = [
+  {
+    title: '근무기간',
+    dataIndex: 'date',
+    key: 'date',
+    width: '20%',
+    align: 'center',
+  },
+  {
+    title: '회사명',
+    dataIndex: 'coName',
+    key: 'coName',
+    width: '40%',
+    align: 'center',
+  },
+  {
+    title: '직책',
+    dataIndex: 'position',
+    key: 'position',
+    width: '40%',
+    align: 'center',
+  }
+];
+
+let columns = window.innerWidth > 768 ? columns1 : columns2
 
 const Career = ({ setCareerY }) => {
   const careerRef = useRef(null);
@@ -24,11 +79,8 @@ const Career = ({ setCareerY }) => {
               <Table
                 dataSource={CareerText}
                 pagination={false}
+                columns={columns}
               >
-                <Column title="근무기간" dataIndex="date" key="date" align='center' />
-                <Column title="회사명" dataIndex="coName" key="coName" align='center' />
-                <Column title="직책" dataIndex="position" key="position" align='center' />
-                <Column title="담당업무" dataIndex="task" key="task" align='center' />
               </Table>
             </div>
           </div>

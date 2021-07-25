@@ -58,7 +58,7 @@ const Skills = ({ setSkillsY }) => {
                 <img src='/node.png' alt='node' />
               </div>
               <div>
-                <span>&nbsp;&nbsp;Spring</span>
+                <span>&nbsp;&nbsp;&nbsp;Spring</span>
                 <img src='/spring.png' alt='spring' />
               </div>
             </div>
