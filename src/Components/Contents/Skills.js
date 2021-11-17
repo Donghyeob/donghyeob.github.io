@@ -39,10 +39,10 @@ const Skills = ({ setSkillsY }) => {
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;React</span>
                 <img src='/react.png' alt='react' />
               </div>
-              <div>
+              {/* <div>
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;Redux</span>
                 <img src='/redux.png' alt='redux' />
-              </div>
+              </div> */}
               {/* <div>
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saga</span>
                 <img src='/saga.png' alt='saga' />
