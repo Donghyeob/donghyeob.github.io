@@ -24,7 +24,7 @@ const Skills = ({ setSkillsY }) => {
                 <img src='/html5.png' alt='html5' />
               </div>
               <div>
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;CSS3</span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;CSS</span>
                 <img src='/css3.png' alt='css3' />
               </div>
               <div>
@@ -39,14 +39,6 @@ const Skills = ({ setSkillsY }) => {
                 <span>&nbsp;&nbsp;&nbsp;&nbsp;React</span>
                 <img src='/react.png' alt='react' />
               </div>
-              {/* <div>
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;Redux</span>
-                <img src='/redux.png' alt='redux' />
-              </div> */}
-              {/* <div>
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saga</span>
-                <img src='/saga.png' alt='saga' />
-              </div> */}
             </div>
           </div>
           <div className='skillsBox'>
